@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/<username>/intro-argo-cd-tutorial' # Update to match your fork.
+    repoURL: 'https://github.com/zcxsythenew/intro-argo-cd-tutorial' # Update to match your fork.
     path: guestbook
     targetRevision: HEAD
   destination:
     namespace: guestbook
-    name: <environment> # Update this value.
+    name: staging # Update this value.
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
